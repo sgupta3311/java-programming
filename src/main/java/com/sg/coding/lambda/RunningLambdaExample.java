@@ -1,4 +1,4 @@
-package com.sg.coding.coding.lambda;
+package com.sg.coding.lambda;
 
 public class RunningLambdaExample {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.sg.coding.coding.random;
+package com.sg.coding.random;
 
 import java.util.function.Consumer;
 

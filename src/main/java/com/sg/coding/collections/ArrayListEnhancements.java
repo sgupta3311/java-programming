@@ -1,4 +1,4 @@
-package com.sg.coding.coding.collections;
+package com.sg.coding.collections;
 
 import java.util.Arrays;
 import java.util.List;

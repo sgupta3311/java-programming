@@ -1,4 +1,4 @@
-package com.sg.coding.coding.model;
+package com.sg.coding.model;
 
 import java.util.List;
 

@@ -1,9 +1,9 @@
-package com.sg.coding.coding.functionalInterfaces;
+package com.sg.coding.functionalInterfaces;
 
 
 
-import com.sg.coding.coding.model.Student;
-import com.sg.coding.coding.model.StudentDataBase;
+import com.sg.coding.model.Student;
+import com.sg.coding.model.StudentDataBase;
 
 import java.util.List;
 import java.util.function.Predicate;
