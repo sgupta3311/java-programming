@@ -24,10 +24,13 @@ public class Student {
     }
 
     public List<String> getActivities() {
+        System.out.println("List of Activities are : " + this.activities);
         return activities;
     }
 
     public void setActivities(List<String> activities) {
+
+
         this.activities = activities;
     }
 
@@ -45,6 +48,12 @@ public class Student {
 
     public void setGradeLevel(Integer gradeLevel) {
         this.gradeLevel = gradeLevel;
+    }
+
+
+    public void printListOfActivities(){
+
+        System.out.println("List of Activities are : " + this.activities);
     }
 
     @Override
