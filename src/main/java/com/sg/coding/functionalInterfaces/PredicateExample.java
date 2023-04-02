@@ -1,7 +1,5 @@
 package com.sg.coding.functionalInterfaces;
 
-
-
 import com.sg.coding.model.Student;
 import com.sg.coding.model.StudentDataBase;
 
@@ -18,9 +16,9 @@ public class PredicateExample implements Predicate<Student> {
 
 
 
-    public static Predicate<Student>  gpaFilter(){
-         Predicate<Student> gpaFilter= student -> student.getGpa()>4;
-         return gpaFilter;
+    public static Predicate<Student> getGPAFilter(){
+        Predicate<Student> gpaFilter= student -> student.getGpa()>4;
+        return gpaFilter;
     }
 
     public static Predicate<Student> getGradeLevel(){
@@ -29,18 +27,18 @@ public class PredicateExample implements Predicate<Student> {
 
     }
     public static void main(String[] args) {
-        List<Student> studentList= StudentDataBase.getAllStudents();
-        List students=studentList.stream().filter(gpaFilter()).collect(Collectors.toList());
+        List<Student> studentList=StudentDataBase.getAllStudents();
+        List students=studentList.stream().filter(getGPAFilter()).collect(Collectors.toList());
         studentList.forEach(student -> {
-            if(gpaFilter().test(student)){
+            if(getGPAFilter().test(student)){
                 System.out.println("After predicate : "+student);
             }
         });
         System.out.println("New student list based on GPA "+students);
-        List studentCompositeList=studentList.stream().filter(gpaFilter().and(getGradeLevel())).collect(Collectors.toList());
+        List studentCompositeList=studentList.stream().filter(getGPAFilter().and(getGradeLevel())).collect(Collectors.toList());
         System.out.println("for each composite filter "+studentCompositeList);
         studentList.forEach(student -> {
-            if(gpaFilter().test(student) && getGradeLevel().test(student)){
+            if(getGPAFilter().test(student) && getGradeLevel().test(student)){
                 System.out.println("ForEach composite filter "+student);
             }
         });
