@@ -24,7 +24,7 @@ public class Student {
     }
 
     public List<String> getActivities() {
-        System.out.println("List of Activities are : " + this.activities);
+        //System.out.println("List of Activities are : " + this.activities);
         return activities;
     }
 
