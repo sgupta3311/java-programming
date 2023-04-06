@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class StreamFlatMapExample {
     public static List<String> printStudentActivities(){
-        List<String> studentActivities= StudentDataBase.getAllStudents().stream().map(Student::getName).collect(Collectors.toList());
+        List<String> studentActivities= StudentDataBase.getAllStudents().stream().map(Student::getActivities).flatMap(List::stream).collect(Collectors.toList());
         return studentActivities;
     }
 
