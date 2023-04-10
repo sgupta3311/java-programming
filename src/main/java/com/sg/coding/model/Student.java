@@ -8,11 +8,40 @@ public class Student {
     private Integer gpa;
     private Integer gradeLevel;
 
-    public Student(String name, List<String> activities, Integer gpa, Integer gradeLevel) {
+    private Integer noteBooks;
+
+    private String gender;
+
+    public  Student(String name, List<String> activities, Integer gpa, Integer gradeLevel) {
         this.name = name;
         this.activities = activities;
         this.gpa = gpa;
         this.gradeLevel = gradeLevel;
+    }
+
+    public Student(String name, List<String> activities, Integer gpa, Integer gradeLevel, Integer  noteBooks, String gender) {
+        this.name = name;
+        this.activities = activities;
+        this.gpa = gpa;
+        this.gradeLevel = gradeLevel;
+        this.noteBooks = noteBooks;
+        this.gender = gender;
+    }
+
+    public Integer getNoteBooks() {
+        return noteBooks;
+    }
+
+    public void setNoteBooks(Integer noteBooks) {
+        this.noteBooks = noteBooks;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public String getName() {

@@ -7,14 +7,25 @@ import java.util.List;
 public class StudentDataBase {
 
 
-    static List<Student> al=new ArrayList<Student>();
+    private static List<Student> students = new ArrayList<>();
+    private static List<Student> newStudents = new ArrayList<>();
 
-    public static List<Student> getAllStudents(){
-         Student s1=new Student("Sam",Arrays.asList("Tennis","Math","Swimming","Chess"),3,3);
-         Student s2=new Student("Terry",Arrays.asList("Skating","Math","Swimming","Piano"),4,3);
-         Student s3=new Student("Fox",Arrays.asList("Testing","Math","Science","English"),5,4);
-        Student s4=new Student("Max",Arrays.asList("Automation","Economics","Commerce","English"),6,5);
-         al=Arrays.asList(s1,s2,s3,s4);
-         return al;
+    public static List<Student> getAllStudents() {
+        Student s1 = new Student("Sam", Arrays.asList("Tennis", "Math", "Swimming", "Chess"), 3, 3);
+        Student s2 = new Student("Terry", Arrays.asList("Skating", "Math", "Swimming", "Piano"), 4, 3);
+        Student s3 = new Student("Fox", Arrays.asList("Testing", "Math", "Science", "English"), 5, 4);
+        Student s4 = new Student("Max", Arrays.asList("Automation", "Economics", "Commerce", "English"), 6, 5);
+        students = Arrays.asList(s1, s2, s3, s4);
+        System.out.println("Get old student: " + students);
+        return students;
     }
+
+    public static List<Student> getAllNewStudents() {
+        Student s1 = new Student("SamKing", Arrays.asList("Tennis", "Math", "Swimming", "Chess"), 3, 3);
+        Student s2 = new Student("TerryKing", Arrays.asList("Skating", "Math", "Swimming", "Piano"), 4, 3);
+        newStudents = Arrays.asList(s1, s2);
+        return newStudents;
+    }
+
+
 }
