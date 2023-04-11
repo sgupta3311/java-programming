@@ -15,14 +15,14 @@ public class StudentDataBase {
         Student s2 = new Student("Terry", Arrays.asList("Skating", "Math", "Swimming", "Piano"), 4, 3);
         Student s3 = new Student("Fox", Arrays.asList("Testing", "Math", "Science", "English"), 5, 4);
         Student s4 = new Student("Max", Arrays.asList("Automation", "Economics", "Commerce", "English"), 6, 5);
+        //Student s5 = new Student("Max", Arrays.asList("Automation", "Economics", "Commerce", "English"), 6, 5);
         students.add(s1);
         students.add(s2);
         students.add(s3);
         students.add(s4);
+       // students.add(s5);
         getAllNewStudents();
-        System.out.println("Get old student: " + students);
         students.addAll(newStudents);
-        System.out.println("Total student list : " + students);
         return students;
     }
 
