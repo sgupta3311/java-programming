@@ -92,6 +92,8 @@ public class Student {
                 ", activities=" + activities +
                 ", gpa=" + gpa +
                 ", gradeLevel=" + gradeLevel +
+                ", noteBooks=" + noteBooks +
+                ", gender='" + gender + '\'' +
                 '}';
     }
 }
