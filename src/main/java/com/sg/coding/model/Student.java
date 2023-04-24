@@ -1,12 +1,15 @@
 package com.sg.coding.model;
 
 import java.util.List;
+import java.util.Optional;
 
 public class Student {
     private String name;
     private List<String> activities;
     private Integer gpa;
     private Integer gradeLevel;
+
+    private Optional<Bike> bike;
 
     private Integer noteBooks;
 
@@ -83,6 +86,14 @@ public class Student {
     public void printListOfActivities(){
 
         System.out.println("List of Activities are : " + this.activities);
+    }
+
+    public Optional<Bike> getBike() {
+        return bike;
+    }
+
+    public void setBike(Optional<Bike> bike) {
+        this.bike = bike;
     }
 
     @Override
